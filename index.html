@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parfum Nandaz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Parfum</h1>
+        <p>Menyediakan berbagai macam parfum dengan aroma yang menawan</p>
+    </header>
+
+    <!-- Product Catalog -->
+    <section id="products" class="product-catalog">
+        <h2>Kategori Parfum</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="logo.png" alt="Parfum 1">
+                <h3>Parfum Elegance</h3>
+                <p class="price">Rp25.00</p>
+                <button class="btn-details" onclick="openModal('Parfum Elegance', 'Parfum ini memiliki aroma elegan yang tahan lama.', 'Rp25.00')">Detail Produk</button>
+            </div>
+            <div class="product-card">
+                <img src="logo.png" alt="Parfum 2">
+                <h3>Parfum Fresh</h3>
+                <p class="price">Rp20.00</p>
+                <button class="btn-details" onclick="openModal('Parfum Fresh', 'Parfum ini memberikan aroma segar sepanjang hari.', 'Rp20.00')">Detail Produk</button>
+            </div>
+            <div class="product-card">
+                <img src="logo.png" alt="Parfum 3">
+                <h3>Parfum Sport</h3>
+                <p class="price">Rp22.00</p>
+                <button class="btn-details" onclick="openModal('Parfum Sport', 'Parfum ini cocok untuk aktivitas olahraga.', 'Rp22.00')">Detail Produk</button>
+            </div>
+            <div class="product-card">
+                <img src="logo.png" alt="Parfum 4">
+                <h3>Parfum Luxury</h3>
+                <p class="price">Rp30.00</p>
+                <button class="btn-details" onclick="openModal('Parfum Luxury', 'Parfum dengan aroma mewah dan elegan.', 'Rp30.00')">Detail Produk</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Product Title</h2>
+            <p id="modalDescription">Product Description</p>
+            <p id="modalPrice">Product Price</p>
+        </div>
+    </div>
+
+    <!-- Footer Navbar -->
+    <footer class="navbar">
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="kontak.html">Social Link</a></li>
+        </ul>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
